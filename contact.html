@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="icon" type="image/png" href="img/logo.jpeg" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+  <title>DINOFOOD FRANCE</title>
+
+</head>
+<body>
+    <header class="head1">
+        <div class="container-menu">
+            <div class="left">
+                <nav class="navHeader">
+                    <ul class="ulHeader">
+                        <li>
+                            <a class="linkHeader effect-underline" href="index.html">accueil</a>
+                        </li>
+                        <li>
+                            <a class="linkHeader effect-underline" href="products.html">la carte</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="center">
+                <a href="index.html">
+                    <img class="imgMenu" src="./img/logo.jpeg" alt="">
+                </a>
+            </div>
+            <div class="right">
+                <nav class="navHeader">
+                    <ul class="ulHeader">
+                        <li>
+                            <a class="linkHeader effect-underline" href="Resto.html">nos restaurants</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <header class="head2">
+            <div class="burgerMenu">
+                <div class="container" id="burger" onclick="burger()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div id="BurgerMenu" class="bbmenu" style="display: none;height: 100%">
+                    <ul class="BurgerList">
+                            <li><a class="linkHeader effect-underline effect-underline" href="index.html">accueil</a></li>
+                            <li><a class="linkHeader effect-underline effect-underline" href="products.html">la carte</a></li>
+                            <li><a class="linkHeader effect-underline effect-underline" href="Resto.html">nos restaurants</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+  <div class="main-container">
+  <article>
+  <h2> Boite à idée ?! </h2>
+<p> Une Dino-question, une Dino-idée, une nouvelle recette de Dino-burger à nous proposer?! Alors prend ta pierre et ton silex et... Euh non! On est plus à l'époque la... Hum Hum Hum!!! Tu peut toujours nous envoyer tes messages dans notre boite à idées, alors n'hésite pas...Rempli le formulaire suivant et envoi nous ton dino-Message!!</p>
+<form class="formulaire" target="_self" id="myForm">
+<div class="form-element">
+  <label>Votre Nom :</label> <input type="text" name="nom" placeholder="Ex: Dupont" size="30" />
+</div>
+<div class="form-element">
+  <label>Votre Prénom :</label> <input type="text" name="prenom" placeholder="Ex: Henri" size="30">
+ </div>
+ <div class="form-element">
+  <label>Votre date de naissance :</label> <input type="date" name="naissance" placeholder="Ex: 01/01/1000" size="20"/>
+</div>
+  <div class="form-element">
+  <label>Votre sexe :</label>
+  <input type="checkbox" name="sexe" value="Masculin"><label for="Masculin"> Masculin</label>
+  <input type="checkbox" name="sexe" value="Feminin"><label for="Féminin"> Féminin</label>
+  </div>
+<div class="form-element">
+  <label>Votre adresse mail :</label> <input type="email" name="mail" placeholder="Ex: henriDupont@mail.fr" size="40">
+</div>
+   <div class="form-element">
+    <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+    <label for="subscribeNews">Souhaitez-vous vous abonner à la newsletter ?</label>
+  </div>
+<div class="form-element">
+  <label for="message">Votre message :</label> <textarea name="message" placeholder="Votre message" id="message" cols="100" rows="8"></textarea>
+</div class="form-element">
+<div id="buttonform">
+  <div>
+  <input type="submit" name="envoyer" id="myPopup" onclick="formFunction()"></div>
+  <div><input type="reset" name="reset"></div>
+</div>
+
+
+
+  </form>
+</article>
+</div>
+<footer>
+  <ul>
+    <li><a class="effect-underline" href="contact.html">CONTACT DINOFOOD</a></li>
+    <li><a class="effect-underline" href="">OFFRES D'EMPLOI</a></li>
+    <li><a class="effect-underline" href="mentionsLegales.html">MENTIONS LÉGALES</a></li>
+    <li><span>&copy;COPYRIGHT DINOFOOD<sup>®</sup> FRANCE 2018 DINOCREW</span></li>
+    <li class="social-icons"><a href="https://fr-fr.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+    <li class="social-icons"><a href="https://twitter.com/?lang=fr" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+  </ul>
+</footer>
+<script src="scripts/script.js"></script>
+</body>
+</html>
